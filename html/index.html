@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="全民星空由大型游戏论坛、游戏代理、ss服务为一体的综合服务型网站。This is a website of blog,games proxy,ss service.">
+    <meta name="author" content="Andy Yang">
+    <meta name="keywords" content="全民星空,全民,星空,全明星,quanmin,xingkong,quanminxingkong,ss,shadowsocks,games,game,proxy,blog,web,website,网站,service,服务">
+    <link rel="icon" href="bootstrap/style/favicon.ico">
+
+    <title>全民星空-ss service</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?1488851c737daef715e9ff8264afcba7";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-76516689-1', 'auto');
+        ga('send', 'pageview');
+   </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">展开</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">ss服务</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+     <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <p>每小时10-20分钟时间段的长期免费测试账号：</p>
+            <p>服务器：quanminxingkong.com</p>
+            <p>端口：1082</p>
+            <p>密码：<span id="pwd"></span></p>
+            <p>加密方式：RC4-MD5</p>
+            <p style="color:red;">注册会员即可享受每月30G免费流量，捐赠者可享受不限量不限速流量，点击<a href="http://ss.quanminxingkong.com" target="_blank">注册</a></p>
+            <p style="color:red;"><br/>备注：本站为非营利性网站，只有设备成本，为了更好地服务大家，我们鼓励大家每月进行一元捐赠计划，不建议大金额捐赠。<br/>支付宝账号：ynhzzu@gmail.com，微信账号：wenshuitangjia</p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-lg-12" id="pay">
+              <h2 style="color:red;">感谢以下捐赠者</h2>
+              <p>支付宝账号：<ul><li>mgr***@gmail.com(一元)</li><li>lts***@163.com(一元)</li><li>cao***@gmail.com(一元)</li><li>abt***@vip.qq.com(一元)</li><li>455***@qq.com(一元)</li></ul></p>
+              <p>微信账号：<ul></ul></p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-12 col-lg-12" id="about_ss">
+              <h2>about ss</h2>
+              <p>A secure socks5 proxy,designed to protect your Internet traffic.</p>
+              <p><h4>Super Fast</h4><br/>Bleeding edge techniques using Asynchronous I/O and Event-driven programming.</p>
+              <p><h4>Flexible Encryption</h4><br/>Secured with industry level encryption algorithm. Flexible to support custom algorithms.</p>
+              <p><h4>Mobile Ready</h4><br/>Optimized for mobile device and wireless network, without any keep-alive connections.</p>
+              <p><h4>Cross Platform</h4><br/>Available on most platforms, including Windows, Linux, Mac, Android, iOS, and OpenWRT.</p>
+              <p><h4>Open Source</h4><br/>Totally free and open source. A worldwide community devoted to deliver bug-free code and long-term support.</p>
+              <p><h4>Easy Deployment</h4><br/>Easy deployment with pip, aur, freshports and many other package manager systems.</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-12 col-lg-12" id="client_down">
+              <h2>客户端下载</h2>
+              <p>windows:<a target="_blank" href="https://github.com/shadowsocks/shadowsocks-csharp/releases/download/2.5.6/Shadowsocks-win-2.5.6.zip">2.5.6.zip</a></p>
+              <p>mac os x:<a target="_blank" href="https://github.com/shadowsocks/shadowsocks-iOS/releases/download/2.6.3/ShadowsocksX-2.6.3.dmg">2.6.3.dmg</a></p>
+              <p>android:<a target="_blank" href="https://play.google.com/store/apps/details?id=com.github.shadowsocks">google play</a></p>
+              <p>ios:<a target="_blank" href="https://itunes.apple.com/app/apple-store/id1070901416?pt=2305194&ct=shadowsocks.org&mt=8">apple store</a></p>
+              <p>参见<a target="_blank" href="https://shadowsocks.com/client.html">client</a>或<a target="_blank" href="https://shadowsocks.com/client.html">client</a></p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-12 col-lg-12" id="server_install">
+              <h2>服务端安装</h2>
+              <p>参见<a href="https://shadowsocks.org/en/download/servers.html" target="_blank">安装文档</a></p>
+            </div><!--/.col-xs-6.col-lg-4-->
+           <div class="col-xs-12 col-lg-12" id="pay_rule">
+            <h2>使用须知</h2>
+            <p>首先感谢你的捐赠，你的捐赠将激励我们更好的服务，请各位捐赠者自觉执行以下须知：</p>
+            <p>1.本账户仅限个人使用，严谨外泄，我们会根据ip使用数量过滤恶意使用者并永久撤销本站所有资格并在本站公布黑名单</p>
+            <p>2.捐赠者将和管理员有同样的使用权限，但是我们还是希望大家自觉节约流量，流量超过一定规模还是要花钱买的</p>
+            <p>3.使用过程中请合理文明上网，不要违反相应的法律法规</p>
+            <p/></p>
+            <p>其它规定待定。</p>
+           </div>
+           <div class="col-xs-12 col-lg-12">
+           <a href="https://m.do.co/c/08ef9ff27efa" target="_balank"><img src="bootstrap/style/do.jpg" alt="do-vps"></img></a>
+           </div>
+          </div><!--/.col-xs-12.col-sm-9-->
+        </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#pay" class="list-group-item active">捐赠者</a>
+            <a href="#about_ss" class="list-group-item">了解ss</a>
+            <a href="#client_down" class="list-group-item">客户端下载</a>
+            <a href="#server_install" class="list-group-item">服务端安装</a>
+            <a href="#pay_rule" class="list-group-item">使用须知</a>
+            <a href="https://m.do.co/c/08ef9ff27efa" target="_balank"><img src="bootstrap/style/do.jpg" alt="do-vps"></img></a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->      
+
+      <hr>
+
+      <footer>
+        <p>&copy; 全民星空  2016</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="bootstrap/js/offcanvas.js"></script>
+    <script>
+     $(document).ready(function(){
+       $.get("pwd.html", function(result){
+         $("#pwd").html(result);
+       });
+     }); 
+   </script>
+  </body>
+</html>

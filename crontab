@@ -1,0 +1,6 @@
+#*　　*　　*　　*　　*　　command 
+#分　时　日　月　周　命令
+05 * * * * python /root/python/start.py >> /root/python/run.log 2>&1 &
+10 * * * * /usr/bin/ssserver --manager-address 0.0.0.0:6001 -c /etc/shadowsocks_test.json -d start --pid-file /var/run/shadowsocks_test.pid
+20 * * * * /usr/bin/ssserver --manager-address 0.0.0.0:6001 -c /etc/shadowsocks_test.json -d stop --pid-file /var/run/shadowsocks_test.pid
+
