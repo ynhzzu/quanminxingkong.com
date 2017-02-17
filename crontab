@@ -1,6 +1,10 @@
 #*　　*　　*　　*　　*　　command 
 #分　时　日　月　周　命令
+#0 0 1 * * python /root/python/remove_mongo.py >> /root/python/run_remove_mongo.log 2>&1 &
 05 * * * * python /root/python/start.py >> /root/python/run.log 2>&1 &
-10 * * * * /usr/bin/ssserver --manager-address 0.0.0.0:6001 -c /etc/shadowsocks_test.json -d start --pid-file /var/run/shadowsocks_test.pid
-20 * * * * /usr/bin/ssserver --manager-address 0.0.0.0:6001 -c /etc/shadowsocks_test.json -d stop --pid-file /var/run/shadowsocks_test.pid
-
+10 * * * * /usr/bin/ssserver -c /etc/shadowsocks_test.json -d start --pid-file /var/run/shadowsocks_test.pid
+20 * * * * /usr/bin/ssserver -c /etc/shadowsocks_test.json -d stop --pid-file /var/run/shadowsocks_test.pid
+#30 * * * * python /root/vpn/updateVpnPass.py 128.199.232.193 >> /root/vpn/run.log 2>&1 &
+#10 * * * * /usr/local/bin/ss-manager -u --manager-address 127.0.0.1:6001 -c /etc/shadowsocks_test.json -f /var/run/shadowsocks_manager_test.pid
+#10 * * * * /usr/local/bin/ss-server -u --manager-address 127.0.0.1:6001 -c /etc/shadowsocks_test.json -f /var/run/shadowsocks_test.pid
+#20 * * * * ps aux | grep shadowsocks_test.json | awk '{print $2}' | xargs kill
