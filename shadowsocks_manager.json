@@ -1,0 +1,13 @@
+{
+    "server":"::",
+    "port_password":{
+         "1080":"yangzzu",
+         "1081":"kaishidashen",
+         "1083":"f80gd24bmz",
+         "1084":"ffewegw89ge06zm5",
+         "8080":"7f93fdg35"
+    },
+    "timeout":300,
+    "method":"rc4-md5",
+    "fast_open": true
+}
