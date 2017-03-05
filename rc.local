@@ -1,0 +1,11 @@
+/serverspeeder/bin/serverSpeeder.sh start
+
+#/usr/bin/ssserver --manager-address 127.0.0.1:6001 -c /etc/shadowsocks_manager.json -d start --pid-file /var/run/shadowsocks_manager.pid
+/usr/bin/ssserver -c /etc/shadowsocks_manager.json -d start --pid-file /var/run/shadowsocks_manager.pid
+
+#/usr/sbin/iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth0 -j MASQUERADE
+#/usr/sbin/iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
+#/usr/sbin/iptables -t nat -A POSTROUTING -s 10.0.1.0/24 -o eth0 -j MASQUERADE
+#/usr/bin/python /root/ss-py/monitor_log.py &
+
+#/usr/bin/python /root/vpn_web/manage.py runserver --insecure 0.0.0.0:8000 &
